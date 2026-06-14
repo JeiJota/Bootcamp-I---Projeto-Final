@@ -1,228 +1,164 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Acadêmico - Joabe Henrique</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>PortfolioHUB - Documentação</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #000; /* fundo preto */
+      color: #fff; /* texto branco */
       margin: 0;
       padding: 0;
-      background: #0d0d0d;
-      color: #00ff99;
     }
+
     header {
-      background: #000;
+      background: #b30000; /* vermelho principal */
+      color: #fff;
+      padding: 2rem;
       text-align: center;
-      padding: 50px 20px;
-      border-bottom: 2px solid #00ff99;
-      box-shadow: 0 0 20px #00ff99;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.8em;
-      color: #00ff99;
-      text-shadow: 0 0 15px #00ff99;
+      font-size: 2.5rem;
     }
+
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #66ffcc;
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    .card {
-      background: #111;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ff99;
-      margin-bottom: 25px;
-      padding: 25px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-left: 6px solid #00ff99;
+
+    section {
+      background: #111; /* preto mais claro para contraste */
+      margin-bottom: 2rem;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(255,0,0,0.3); /* sombra vermelha */
     }
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 30px #00ff99;
+
+    section h2 {
+      color: #b30000; /* títulos em vermelho */
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #b30000;
+      padding-bottom: 0.5rem;
     }
-    .card h2 {
-      color: #00ff99;
-      margin-top: 0;
-      font-size: 1.6em;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .card p {
-      margin: 12px 0 0;
-      line-height: 1.6;
-      color: #ccffdd;
+
+    ul li {
+      margin-bottom: 0.6rem;
+      padding-left: 1.5rem;
+      position: relative;
     }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #b30000; /* ícones em vermelho */
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background: #000;
-      color: #00ff99;
-      margin-top: 40px;
-      border-top: 2px solid #00ff99;
-      box-shadow: 0 -2px 15px #00ff99;
+      padding: 1.5rem;
+      background: #b30000;
+      color: #fff;
+      margin-top: 2rem;
     }
-    /* Neon glow animation */
-    @keyframes neon {
-      0% { text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99; }
-      50% { text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99; }
-      100% { text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99; }
+
+    footer p {
+      font-size: 0.9rem;
     }
-    header h1 {
-      animation: neon 2s infinite alternate;
-    }
-    /* Responsividade */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-      .card {
-        padding: 20px;
-      }
+
+    .highlight {
+      background: #1a1a1a;
+      padding: 0.5rem;
+      border-left: 4px solid #b30000;
+      margin: 1rem 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Portfólio Acadêmico</h1>
-    <p>Projetos e Certificações - Joabe Henrique</p>
+    <h1>PortfolioHUB</h1>
+    <p>Documentação de Implantação e Integração com GitHub</p>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2><i class="fa-solid fa-code"></i> HTML / CSS / JS / MySQL</h2>
-      <p>Como Trabalho de Conclusão de Curso, eu e minha equipe desenvolvemos uma página com HTML e CSS para o front-end. Para torná-la responsiva, utilizamos JavaScript. Por fim, aplicamos conceitos de entidade, relacionamento e chave primária (PK) em um banco MySQL para armazenar dados de cadastro e login.</p>
-    </div>
+  <main>
+    <section>
+      <h2>1. Planejamento da Implantação</h2>
+      <p class="highlight">O PortfolioHUB é uma plataforma web centralizada para exibição e gerenciamento de projetos e portfólios digitais.</p>
+      <ul>
+        <li>Site de portfólio pessoal (frontend estático).</li>
+        <li>Repositório centralizado no GitHub para versionamento.</li>
+        <li>Integração em tempo real com a API do GitHub.</li>
+        <li>Políticas de segurança e controle de acesso configuradas.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h2><i class="fa-solid fa-paintbrush"></i> Photoshop</h2>
-      <p>Criação de design de sites e logos, com renderização de imagens para melhorar a experiência do usuário. Entre os projetos, destaca-se um pôster digital para divulgação de evento acadêmico, envolvendo edição de imagens, filtros, ajustes de cores e tipografia para transmitir clareza e impacto visual.</p>
-    </div>
+    <section>
+      <h2>2. Configuração Inicial e Integração</h2>
+      <ul>
+        <li>Repositório <strong>Bootcamp-Final</strong> criado no GitHub.</li>
+        <li>Branch padrão: <code>main</code> com GitHub Pages ativo.</li>
+        <li>Estrutura: <code>index.html</code>, <code>style.css</code>, <code>script.js</code>, <code>SECURITY.md</code>, <code>README.md</code>.</li>
+        <li>Integração com GitHub REST API v3 para dados dinâmicos.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h2><i class="fa-solid fa-cube"></i> Arte 3D</h2>
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Acadêmico - Joabe Henrique</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #0d0d0d;
-      color: #00ff99;
-    }
-    header {
-      background: #000;
-      text-align: center;
-      padding: 50px 20px;
-      border-bottom: 2px solid #00ff99;
-      box-shadow: 0 0 20px #00ff99;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      color: #00ff99;
-      text-shadow: 0 0 15px #00ff99;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #66ffcc;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    .card {
-      background: #111;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ff99;
-      margin-bottom: 25px;
-      padding: 25px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-left: 6px solid #00ff99;
-    }
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 30px #00ff99;
-    }
-    .card h2 {
-      color: #00ff99;
-      margin-top: 0;
-      font-size: 1.6em;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .card p {
-      margin: 12px 0 0;
-      line-height: 1.6;
-      color: #ccffdd;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      color: #00ff99;
-      margin-top: 40px;
-      border-top: 2px solid #00ff99;
-      box-shadow: 0 -2px 15px #00ff99;
-    }
-    /* Neon glow animation */
-    @keyframes neon {
-      0% { text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99; }
-      50% { text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99; }
-      100% { text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99; }
-    }
-    header h1 {
-      animation: neon 2s infinite alternate;
-    }
-    /* Responsividade */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-      .card {
-        padding: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Portfólio Acadêmico</h1>
-    <p>Projetos e Certificações - Joabe Henrique</p>
-  </header>
+    <section>
+      <h2>3. Gestão de Usuários e Segurança</h2>
+      <ul>
+        <li>Autenticação 2FA ativa.</li>
+        <li>Branch Protection Rules configuradas.</li>
+        <li>Dependabot, Secret Scanning e CodeQL habilitados.</li>
+        <li>Arquivo <code>SECURITY.md</code> documentando vulnerabilidades.</li>
+      </ul>
+    </section>
 
-  <div class="container">
-    <div class="card">
-      <h2><i class="fa-solid fa-code"></i> HTML / CSS / JS / MySQL</h2>
-      <p>Como Trabalho de Conclusão de Curso, eu e minha equipe desenvolvemos uma página com HTML e CSS para o front-end. Para torná-la responsiva, utilizamos JavaScript. Por fim, aplicamos conceitos de entidade, relacionamento e chave primária (PK) em um banco MySQL para armazenar dados de cadastro e login.</p>
-    </div>
+    <section>
+      <h2>4. Compartilhamento e Controle de Acesso</h2>
+      <ul>
+        <li>Modelo trunk-based development com <code>main</code> protegida.</li>
+        <li>Commits semânticos seguindo Conventional Commits.</li>
+        <li>Deploy automático via GitHub Pages.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h2><i class="fa-solid fa-paintbrush"></i> Photoshop</h2>
-      <p>Criação de design de sites e logos, com renderização de imagens para melhorar a experiência do usuário. Entre os projetos, destaca-se um pôster digital para divulgação de evento acadêmico, envolvendo edição de imagens, filtros, ajustes de cores e tipografia para transmitir clareza e impacto visual.</p>
-    </div>
+    <section>
+      <h2>5. Testes e Validação</h2>
+      <ul>
+        <li>Funcionalidades testadas: modais, navegação, integração API.</li>
+        <li>Bugs corrigidos: cards de projetos, navegação por teclado.</li>
+        <li>Validação final com Google Gemini confirmando boas práticas.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h2><i class="fa-solid fa-cube"></i> Arte 3D</h2>
->>>>>>> 80adebaa28f763b4e7102366068efa0183f9eab7
-      <p>Desenvolvimento de um modelo tridimensional da Estrela da Morte, inspirado em Star Wars, utilizando Blender para modelagem e renderização
+    <section>
+      <h2>6. Revisão Final e Apresentação</h2>
+      <ul>
+        <li>Resumo das etapas concluídas com sucesso.</li>
+        <li>Desafios superados: limites da API, segurança em repositório público.</li>
+        <li>Apresentação em vídeo disponível no YouTube.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PortfolioHUB Labs - Integração GitHub & Google Workspace</p>
+  </footer>
+</body>
+</html>
