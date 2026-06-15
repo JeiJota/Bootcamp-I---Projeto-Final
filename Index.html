@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joabe | Portfólio Profissional</title>
+    <!-- Link para ícones (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (MENU DE NAVEGAÇÃO) -->
+    <nav class="navbar">
+        <div class="logo">Joabe<span>.dev</span></div>
+        <button class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="#inicio"><i class="fas fa-home"></i>Início</a>
+            <a href="#sobre"><i class="fas fa-user"></i>Sobre</a>
+            <a href="#habilidades"><i class="fas fa-code"></i>Habilidades</a>
+            <a href="#jornada"><i class="fas fa-graduation-cap"></i>Jornada</a>
+            <a href="#projetos"><i class="fas fa-folder-open"></i>Projetos</a>
+            <a href="#recomendacoes"><i class="fas fa-comments"></i>Recomendações</a>
+            <a href="#contato"><i class="fas fa-envelope"></i>Contato</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (INÍCIO) -->
+    <section id="inicio" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="subtitle-welcome">BEM-VINDO AO MEU ESPAÇO</span>
+                <h1>Olá, sou o Joabe. Desenvolvedor Full-Stack focado em soluções robustas.</h1>
+                <p id="hero-dynamic-text">Construindo aplicações modernas com JavaScript, otimizando ecossistemas com MySQL e modelando arquiteturas com os pilares da Engenharia de Software.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-primary">Vamos Conversar</a>
+                    <a href="#projetos" class="btn-secondary-outline">Ver Projetos</a>
+                </div>
+            </div>
+            
+            <!-- CARD DO GITHUB DINÂMICO -->
+            <div class="github-card">
+                <span class="card-header-badge">LIVE GITHUB DATA</span>
+                <img id="gh-avatar" src="https://via.placeholder.com/150" alt="Foto de Perfil" class="avatar">
+                <h2 id="gh-name">Carregando...</h2>
+                <p id="gh-bio">Buscando informações do perfil técnico...</p>
+                
+                <div class="gh-stats">
+                    <div>Repositórios <strong id="gh-repos">0</strong></div>
+                    <div>Seguidores <strong id="gh-followers">0</strong></div>
+                    <div>Seguindo <strong id="gh-following">0</strong></div>
+                </div>
+                
+                <a id="gh-link" href="#" target="_blank" class="btn-github">
+                    <i class="fab fa-github"></i> Visitar GitHub Oficial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS SECTION (MÉTRICAS RÁPIDAS) -->
+    <section class="metrics-section">
+        <div class="container metrics-grid">
+            <div class="metric-item">
+                <div class="metric-icon"><i class="fas fa-code-branch"></i></div>
+                <h3>+6</h3>
+                <p>Repositórios Criados</p>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon"><i class="fas fa-hourglass-half"></i></div>
+                <h3>+150</h3>
+                <p>Horas de Codificação</p>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon"><i class="fas fa-check-circle"></i></div>
+                <h3>100%</h3>
+                <p>Responsivo & Adaptável</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (O QUE EU FAÇO) -->
+    <section id="sobre" class="services-section">
+        <div class="container">
+            <h2 class="section-title">O Que Eu Faço</h2>
+            <p class="section-subtitle">Soluções focadas em desempenho, organization de dados e usabilidade</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fab fa-js"></i></div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de páginas dinâmicas, interativas e totalmente responsivas utilizando HTML5, CSS3 avançado e JavaScript puro.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Banco de Dados</h3>
+                    <p>Modelagem estruturada, criação de esquemas relacionais eficientes e manipulação de dados utilizando a linguagem SQL e MySQL.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Engenharia de Software</h3>
+                    <p>Aplicação de metodologias ágeis, conceitos de arquitetura limpa, análise de requisitos e boas práticas de design pattern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION (HABILIDADES) -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <p class="section-subtitle">Tecnologias e ferramentas que domino e aplico no meu dia a dia</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #e34f26;"><i class="fab fa-html5"></i></div>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #1572b6;"><i class="fab fa-css3-alt"></i></div>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #f7df1e;"><i class="fab fa-js-square"></i></div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #00758f;"><i class="fas fa-database"></i></div>
+                    <span>MySQL / SQL</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #f05032;"><i class="fab fa-git-alt"></i></div>
+                    <span>Git / GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon" style="color: #005aa3;"><i class="fas fa-laptop-code"></i></div>
+                    <span>Web Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JORNADA & AGORA SECTION (LINHA DO TEMPO) -->
+    <section id="jornada" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Minha Jornada</h2>
+            <p class="section-subtitle">Formação acadêmica, evolução técnica e onde estou focando agora</p>
+            
+            <div class="timeline">
+                <!-- Ano 2024 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Primeiros Passos na Tecnologia</h3>
+                        <p>Início dos estudos autodidatas focados em algoritmos, lógica de programação e desenvolvimento web básico com as estruturas fundamentais de HTML5 e estilizações em CSS3.</p>
+                    </div>
+                </div>
+
+                <!-- Ano 2025 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Aprofundamento Técnico</h3>
+                        <p>Consolidação no desenvolvimento front-end com a introdução do JavaScript dinâmico e manipulação do DOM. Início dos estudos em bancos de dados relacionais e versionamento de código com Git.</p>
+                    </div>
+                </div>
+
+                <!-- Ano 2026 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Bacharelado em Engenharia de Software</h3>
+                        <p>Início da graduação no <strong>UniCEUB</strong>. Um marco importante onde passei a aprimorar profundamente minhas habilidades em Lógica de Programação de alto nível, estruturação e otimização de Banco de Dados, e conceitos modernos de Web Design.</p>
+                    </div>
+                </div>
+                
+                <!-- Bloco: Agora -->
+                <div class="timeline-item right">
+                    <div class="timeline-content" style="border-left: 3px solid #e50914;">
+                        <span class="timeline-date" style="background: #e50914; color: white; padding: 2px 8px; border-radius: 4px;">AGORA</span>
+                        <h3>Foco Prático & Projetos Coletivos</h3>
+                        <p>Atuando ativamente no desenvolvimento de trabalhos coletivos voltados para Banco de Dados complexos, além da criação, documentação e exemplificação da Engenharia de Software aplicada diretamente na prática.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION (PROJETOS EM DESTAQUE + GITHUB) -->
+    <section id="projetos" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <p class="section-subtitle">Aplicações em desenvolvimento e repositórios de código</p>
+            
+            <!-- SUBSEÇÃO 1: PROJETOS ATUAIS E EM ANDAMENTO -->
+            <h3 style="color: #fff; font-size: 20px; margin-bottom: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-hammer" style="color: #e50914; font-size: 18px;"></i> Projetos Atuais & Concluídos
+            </h3>
+            
+            <div class="portfolio-grid" style="margin-bottom: 60px;">
+                <!-- Projeto Atual 1: Bootcamp I -->
+                <div class="project-card" style="border-top: 3px solid #e50914;">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-laptop-code project-img-icon" style="opacity: 1; color: #e50914;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bootcamp I</h3>
+                        <p>Desenvolvimento intensivo focado em algoritmos práticos, desafios de lógica de programação e arquitetura de sistemas iniciais.</p>
+                        <div class="badges">
+                            <span>JavaScript</span>
+                            <span>Lógica</span>
+                            <span>Em Andamento</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span style="color: #cca3a6; font-size: 12px; font-weight: 600;"><i class="fas fa-sync fa-spin" style="margin-right: 5px;"></i> Atualizando</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Atual 2: PortfólioHUB -->
+                <div class="project-card" style="border-top: 3px solid #e50914;">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-network-wired project-img-icon" style="opacity: 1; color: #e50914;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>PortfólioHUB</h3>
+                        <p>Centralizador de projetos e histórico profissional, unindo design responsivo com consumo de APIs assíncronas para exibição em tempo real.</p>
+                        <div class="badges">
+                            <span>HTML5/CSS3</span>
+                            <span>API REST</span>
+                            <span>Em Andamento</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span style="color: #cca3a6; font-size: 12px; font-weight: 600;"><i class="fas fa-sync fa-spin" style="margin-right: 5px;"></i> Atualizando</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Concluído: Trabalhos UniCEUB -->
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-check-double project-img-icon" style="opacity: 0.8;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Projetos & Práticas Acadêmicas</h3>
+                        <p>Repositório focado nas soluções práticas desenvolvidas em sala de aula, abordando Engenharia de Software e modelagem de sistemas.</p>
+                        <div class="badges">
+                            <span>SQL</span>
+                            <span>Modelagem</span>
+                            <span>Concluído</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span style="color: #ff949a; font-size: 12px; font-weight: 600;"><i class="fas fa-star" style="margin-right: 5px;"></i> Base Acadêmica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBSEÇÃO 2: REPOSITÓRIOS GERAIS DO GITHUB (CARREGAMENTO DINÂMICO) -->
+            <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, #3a0d11, transparent); margin-bottom: 40px;">
+            
+            <h3 style="color: #fff; font-size: 20px; margin-bottom: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                <i class="fab fa-github" style="color: #b3b3b3; font-size: 18px;"></i> Outros Repositórios no GitHub
+            </h3>
+            
+            <!-- Lista dinâmica controlada pelo script.js -->
+            <div class="portfolio-grid" id="github-repos-list">
+                <div class="project-card" style="grid-column: 1/-1; text-align: center; padding: 40px; color: #b3b3b3;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 32px; color: #e50914; margin-bottom: 15px;"></i>
+                    <p>Sincronizando com os repositórios do GitHub...</p>
+                </div>
+            </div>
+            
+        </div> 
+    </section>
+
+    <!-- TESTIMONIALS SECTION (RECOMENDAÇÕES) -->
+    <section id="recomendacoes" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Recomendações</h2>
+            <p class="section-subtitle">O que colegas acadêmicos e profissionais dizem sobre mim</p>
+            
+            <div class="testimonials-grid">
+                <!-- Murilo Cesar -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Tive a oportunidade de realizar trabalhos e projetos acadêmicos junto com o Joabe no UniCEUB. Ele possui uma capacidade incrível de solucionar problemas de lógica rapidamente e é extremamente colaborativo nas etapas de desenvolvimento em grupo."</p>
+                    <div class="testimonial-author">
+                        <strong>Murilo Cesar</strong>
+                        <span>Aluno da Universidade UniCEUB</span>
+                    </div>
+                </div>
+                
+                <!-- Guilherme Almeida -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Acompanhei de perto alguns dos trabalhos desenvolvidos pelo Joabe, especialmente as modelagens e implementações práticas. A atenção dele aos detalhes, a organização do código e a preocupação com a arquitetura de software são admiráveis."</p>
+                    <div class="testimonial-author">
+                        <strong>Guilherme Almeida</strong>
+                        <span>Segurança da Informação</span>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <!-- CONTACT SECTION (CONTATO) -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Canais de Comunicação</h2>
+            <p class="section-subtitle">Sinta-se à vontade para entrar em contato para parcerias ou projetos</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-panel">
+                    <div>
+                        <h3>Vamos criar algo incrível?</h3>
+                        <p>Estou sempre aberto a discutir novos projetos, conceitos de engenharia de software e oportunidades no mercado dev.</p>
+                    </div>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Joabe.hm@sempreceub.com</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Brasília, DF - Brasil</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social-icons">
+                        <a href="https://github.com/JeiJota" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: joao@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (RODAPÉ) -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Joabe. Todos os direitos reservados.</p>
+            <p class="footer-subtext">Desenvolvido com foco e precisão em Engenharia de Software.</p>
+        </div>
+    </footer>
+
+    <!-- Link para o Script Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
