@@ -16,6 +16,13 @@ A sua implantação segue princípios rigorosos de segurança avançada, governa
 
 ---
 
+## 🌐 Demonstração Online (Deploy)
+O ambiente frontend do ecossistema foi isolado de forma modular e implantado via GitHub Pages. Você pode visualizar a aplicação e o histórico de projetos práticos em tempo real clicando no link abaixo:
+
+👉 **[Acessar PortfolioHUB Online](https://jeijota.github.io/Reposit-rio-sub/)**
+
+---
+
 ## 🎯 Objetivos Estratégicos
 
 * **Centralização Eficiente:** Unificar projetos e portfólios digitais em um ecossistema único e intuitivo.
@@ -29,7 +36,7 @@ A sua implantação segue princípios rigorosos de segurança avançada, governa
 
 O cronograma de desenvolvimento e governança do ecossistema está dividido estruturalmente em quatro grandes fases:
 
-| Fase | Descrição Técnica | Status |
+| Fase | Descrição Técnico | Status |
 | :--- | :--- | :---: |
 | **1. Setup & Infra** | Criação da organização dedicada (`portfoliohub-labs`) e repositórios críticos (`core` e `infrastructure`). | 🟩 Concluído |
 | **2. Integração** | Implementação de GitHub Apps para autenticação segura via OAuth, eliminando tokens pessoais. | 🟩 Concluído |
@@ -78,9 +85,3 @@ A governança deste repositório incentiva as melhores práticas do ecossistema 
 
 * **GitHub:** [JeiJota](https://github.com/JeiJota)
 * **E-mail Institucional:** Joabe.hm@sempreceub.com
--- Integração transparente com GitHub e Google Workspace.
-
--- Segurança reforçada e conformidade com padrões internacionais.
-
--- Colaboração eficiente entre equipes multidisciplinares.
-
